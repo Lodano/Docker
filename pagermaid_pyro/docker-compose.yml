@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  pagermaid_pyro:
+    container_name: PGP
+    hostname: PGP
+    privileged: true
+    image: pagermaid_pyro:latest
+    restart: unless-stopped
+  networks:
+    - join    
+networks:
+  join:
+    external: true
