@@ -7,7 +7,7 @@ services:
     image: pagermaid_pyro:latest
     restart: unless-stopped
     volumes:
-      - ./:/.docker/pagermaid_pyro
+      - ./:/pagermaid_pyro
     environment:
       - RUN_AS_ROOT=false
       - PUID=1000           
